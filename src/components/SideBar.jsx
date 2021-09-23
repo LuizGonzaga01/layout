@@ -1,10 +1,14 @@
 import { FaHome, FaFileAlt, FaFolderMinus, FaImage, FaNewspaper, FaEnvelope, FaEdit, FaBars, FaUsers, FaCog } from "react-icons/fa";
+import Logo from '../../src/image/Group.svg';
 
 export function SideBar() {
     return (
         <nav className="sidebar">
-            <span>Enterprise</span>
-            <div className="title">
+            <div className="logo">
+                <img src={Logo} alt="avatar" />
+                <span className="text" >Enterprise         <span className="text1">Dashboard</span></span>
+            </div>
+            <div className="title" style={{ borderTop: '1px solid #1971f8', marginTop: '8px' }}>
             </div>
             <navbar className="navbar">
                 <li ><span><FaHome />   </span>Dashboard</li>
