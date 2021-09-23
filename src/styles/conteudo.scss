@@ -1,0 +1,115 @@
+div.title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 1.3rem;
+    padding: 0px 20px 8px 20px;
+    color: #000000;
+
+    div {
+        background: #FFFFFF;
+        padding: 1rem 2rem;
+        border-radius: 5px 5px 0 0;
+    }
+
+    table {
+        width: 100%;
+        border-spacing: 0 0.1rem;
+
+
+
+        th {
+            font-weight: 400;
+            padding: 0.9rem 0;
+            border-top: 1px solid #eeeeee;
+            text-align: left;
+            font-size: 0.8rem;
+            height: 4px;
+            color: var(--background-button2);
+
+        }
+
+        td {
+            border: 0;
+            height: 64px;
+            text-align: left;
+            background: #FFFFFF;
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: var(--background-button2);
+
+            div {
+                margin: 0px;
+                padding: 10px 6px 0px 10px
+            }
+
+            input {
+                margin: 25px;
+            }
+
+        }
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .pesquisar {
+        border: 0px;
+        height: 34px;
+        font-size: 0.8rem;
+        background: var(--background);
+        width: 271px;
+        border-radius: 3px;
+        margin-left: 30px;
+        outline: 0;
+    }
+
+    .selects {
+        border: 0px;
+        height: 34px;
+        font-size: 0.8rem;
+        background: var(--background);
+        width: 150px;
+        border-radius: 3px;
+        margin-left: 30px;
+        outline: 0;
+    }
+
+    ul.pagination {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        display: inline-block;
+        padding: 0;
+    }
+
+    ul.pagination li {
+        display: inline;
+    }
+
+    ul.pagination li a {
+        color: black;
+        float: right;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+    }
+
+    ul.pagination li a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .paginator1 {
+        background: #2f49d1;
+        border-radius: 15%;
+    }
+
+    .paginator2 {
+        background: #dde1f6;
+        border-radius: 15%;
+    }
+}
