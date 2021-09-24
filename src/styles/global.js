@@ -1,3 +1,7 @@
+import { createGlobalStyle } from "styled-components";
+
+const CreateGlobalStyle = createGlobalStyle`
+
 :root {
     --background: #f0f2fa;
     --background2: #2E303C;
@@ -32,3 +36,7 @@ textarea {
 button {
     cursor: pointer;
 }
+
+`;
+
+export default CreateGlobalStyle;

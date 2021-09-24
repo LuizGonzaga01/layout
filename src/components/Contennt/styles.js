@@ -1,4 +1,29 @@
-div.title {
+import styled from "styled-components";
+
+
+const cor =
+{
+    red: {
+        fraco: '#feefef',
+        medio: '#f26464',
+    },
+
+    blue: {
+        fraco: '#eef3ff',
+        medio: '#5887ff',
+
+    },
+
+    yellow: {
+        fraco: '#fff7eb',
+        medio: '#ffb648',
+    },
+};
+
+
+
+export const Conteiner = styled.div`
+
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -7,49 +32,15 @@ div.title {
     padding: 0px 20px 8px 20px;
     color: #000000;
 
+
+
     div {
         background: #FFFFFF;
         padding: 1rem 2rem;
         border-radius: 5px 5px 0 0;
     }
 
-    table {
-        width: 100%;
-        border-spacing: 0 0.1rem;
-
-
-
-        th {
-            font-weight: 400;
-            padding: 0.9rem 0;
-            border-top: 1px solid #eeeeee;
-            text-align: left;
-            font-size: 0.8rem;
-            height: 4px;
-            color: var(--background-button2);
-
-        }
-
-        td {
-            border: 0;
-            height: 64px;
-            text-align: left;
-            background: #FFFFFF;
-            font-weight: 400;
-            font-size: 0.8rem;
-            color: var(--background-button2);
-
-            div {
-                margin: 0px;
-                padding: 10px 6px 0px 10px
-            }
-
-            input {
-                margin: 25px;
-            }
-
-        }
-    }
+    
 
     .principal {
         display: flex;
@@ -93,7 +84,7 @@ div.title {
     ul.pagination li a {
         color: black;
         float: right;
-        padding: 8px 16px;
+        padding: 6px 16px;
         text-decoration: none;
         transition: background-color .3s;
     }
@@ -112,4 +103,54 @@ div.title {
         background: #dde1f6;
         border-radius: 15%;
     }
-}
+
+`;
+
+
+
+export const Table = styled.table`
+    width: 100%;
+    border-spacing: 0 0.1rem;
+
+    th {
+        font-weight: 400;
+        padding: 0.9rem 0;
+        border-top: 1px solid #eeeeee;
+        text-align: left;
+        font-size: 0.8rem;
+        height: 4px;
+        color: var(--background-button2);
+
+    }
+    
+    td {
+        border: 0;
+        height: 64px;
+        text-align: left;
+        background: #FFFFFF;
+        font-weight: 400;
+        font-size: 0.8rem;
+        color: var(--background-button2);
+
+        div {
+            margin: 0px;
+            padding: 10px 6px 0px 10px
+        }
+
+        input {
+            margin: 25px;
+        }
+    }
+
+
+`;
+
+export const Tag = styled.span`
+
+    background: ${({ type }) => cor[type].fraco};
+    color: ${({ type }) => cor[type].medio};
+    padding: 1px 8px 1px 8px ;
+    border-radius: 50px;
+    width: 79px;
+    height: 22px;
+`;

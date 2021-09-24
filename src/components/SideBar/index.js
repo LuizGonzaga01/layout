@@ -1,9 +1,11 @@
+import React from 'react';
+import { Container } from './styles';
 import { FaHome, FaFileAlt, FaFolderMinus, FaImage, FaNewspaper, FaEnvelope, FaEdit, FaBars, FaUsers, FaCog } from "react-icons/fa";
-import Logo from '../../src/image/Group.svg';
+import Logo from '../../../src/image/Group.svg';
 
-export function SideBar() {
+function SideBar() {
     return (
-        <nav className="sidebar">
+        <Container>
             <div className="logo">
                 <img src={Logo} alt="avatar" />
                 <span className="text" >Enterprise         <span className="text1">Dashboard</span></span>
@@ -22,8 +24,10 @@ export function SideBar() {
                 <li ><span><FaUsers />   </span>Users</li>
                 <li ><span><FaCog />   </span>Settings</li>
             </navbar>
-        </nav>
+        </Container>
     )
 }
+
+export default SideBar;
 
 

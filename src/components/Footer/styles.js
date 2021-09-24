@@ -1,4 +1,6 @@
-footer.footer {
+import styled from "styled-components";
+
+export const Container = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,4 +12,4 @@ footer.footer {
     color: black;
     font-size: 12px;
     border-top: 1px solid var(--white);
-}
+`;
